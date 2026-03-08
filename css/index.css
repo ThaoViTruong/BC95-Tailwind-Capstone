@@ -1,0 +1,49 @@
+ 
+ .horizontal-slide-from-right-to-left{animation:horizontal-slide-from-right-to-left linear 10s infinite}
+ .horizontal-slide-from-left-to-right{animation:horizontal-slide-from-left-to-right linear 10s infinite}
+ @keyframes horizontal-slide-from-right-to-left{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+ @keyframes horizontal-slide-from-left-to-right{from{transform:translateX(-50%)}to{transform:translateX(0)}}
+ 
+ .testimonial-section h2{font-size:clamp(2.75rem,7vw,4.5rem);line-height:1.1;font-weight:700}
+ .testimonial-section .grid .jos p{font-size:1.125rem;line-height:1.6}
+ .footer-text-slider{animation:horizontal-slide-from-right-to-left 12s linear infinite}
+ .footer-text-slider .block{font-size:clamp(2rem,6vw,4rem);line-height:1}
+ 
+ .testimonial-section .grid>.jos{background-color:#111;border-color:#2a2a2a;border-radius:12px;padding:32px}
+ .testimonial-section .grid>.jos:hover{border-color:#3a3a3a;box-shadow:0 8px 24px rgba(0,0,0,.25)}
+ .font-dmSans{font-family:"DM Sans",ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif}
+ .price-button{padding:10px 24px;border-radius:9999px;transition:all .2s ease;line-height:1}
+ .price-button.active{background:#000;color:#fff}
+ .faq-section h2{font-size:clamp(2.5rem,6vw,5rem);line-height:1.05;font-weight:700;letter-spacing:-.02em}
+ .faq-plus{position:relative;display:inline-block;width:24px;height:24px}
+ .faq-plus::before,.faq-plus::after{content:"";position:absolute;background:#000;border-radius:1px;transition:transform .2s ease,width .2s ease,height .2s ease,opacity .2s ease}
+ .faq-plus::before{top:50%;left:0;width:100%;height:2px;transform:translateY(-50%) rotate(0deg)}
+ .faq-plus::after{left:50%;top:0;width:2px;height:100%;transform:translateX(-50%) rotate(0deg)}
+ .accordion-content{height:0;overflow:hidden;opacity:0;transform:translateY(20px);transition:all .3s ease}
+ .accordion-item.open .accordion-content,.accordion-item.active .accordion-content{height:auto;opacity:1;transform:translateY(0);margin-top:12px}
+ .accordion-item.open .faq-plus::before,.accordion-item.active .faq-plus::before{transform:translateY(-50%) rotate(45deg)}
+ .accordion-item.open .faq-plus::after,.accordion-item.active .faq-plus::after{left:0;top:50%;width:100%;height:2px;transform:translateY(-50%) rotate(-45deg)}
+ #funfact-section h2{font-size:clamp(2.75rem,6vw,4.25rem);line-height:1.1;font-weight:800;letter-spacing:-.02em}
+ #funfact-section h3{font-size:clamp(2.75rem,7.2vw,5.5rem);line-height:1;font-weight:500}
+ #funfact-section h3 .start-number{font-weight:500}
+ #funfact-section .section-divider{background:rgba(255,255,255,.1);height:1px}
+ #funfact-section .stat-label{color:rgba(255,255,255,.75);font-size:clamp(.9rem,1.1vw,1.125rem)}
+ #funfact-section .content-copy{font-size:clamp(1.1rem,1.5vw,1.375rem);line-height:1.6}
+ .pricing-section h2{font-size:clamp(2.75rem,8vw,5rem);line-height:1.05;font-weight:700;letter-spacing:-.02em}
+ .pricing-section .price-toggle{position:relative;display:inline-flex;align-items:center;border:2px solid #000;border-radius:9999px;padding:6px;background:#fff;overflow:hidden}
+ .pricing-section .price-toggle .toggle-bg{position:absolute;top:6px;bottom:6px;left:6px;width:calc(50% - 12px);border-radius:9999px;background:#000;transition:transform .25s ease}
+ .pricing-section .price-toggle.yearly .toggle-bg{transform:translateX(100%)}
+ .pricing-section .price-toggle .price-button{position:relative;z-index:1;color:#000;background:transparent;border:none;font-weight:600}
+ .pricing-section .price-toggle .price-button.active{color:#fff}
+ 
+ .pricing-section{position:relative;overflow:visible}
+ .pricing-section .pricing-blob{position:absolute;z-index:-1;top:-140px;left:-140px;width:520px;height:520px;border-radius:520px}
+ .jos{opacity:0;transform:translateY(16px);transition:opacity .6s ease,transform .6s ease}
+ .jos[data-jos_animation="fade"]{transform:translateY(16px)}
+ .jos[data-jos_animation="fade-left"]{transform:translateX(-16px)}
+ .jos[data-jos_animation="fade-right"]{transform:translateX(16px)}
+ .jos[data-jos_animation="zoom"]{transform:scale(.96)}
+ .jos.jos-in{opacity:1;transform:none}
+ 
+ .accordion-item .accordion-header{transition:color .2s ease}
+ .accordion-item:hover .accordion-header{color:#fe330a}
