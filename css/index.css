@@ -1,9 +1,106 @@
- 
+
  .horizontal-slide-from-right-to-left{animation:horizontal-slide-from-right-to-left linear 10s infinite}
  .horizontal-slide-from-left-to-right{animation:horizontal-slide-from-left-to-right linear 10s infinite}
  @keyframes horizontal-slide-from-right-to-left{from{transform:translateX(0)}to{transform:translateX(-50%)}}
  @keyframes horizontal-slide-from-left-to-right{from{transform:translateX(-50%)}to{transform:translateX(0)}}
- 
+ @keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-up {
+  opacity: 0;
+  animation: fadeUp 1.2s ease-out forwards;
+}
+@keyframes fadeLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(60px); /* từ trong (phải) chạy ra */
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeRight {
+  0% {
+    opacity: 0;
+    transform: translateX(-60px); /* từ trong (trái) chạy ra */
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.fade-left {
+  opacity: 0;
+  animation: fadeLeft 1.2s ease-out forwards;
+}
+
+.fade-right {
+  opacity: 0;
+  animation: fadeRight 1.2s ease-out forwards;
+}
+@keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-80px); /* từ ngoài trái */
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(80px); /* từ ngoài phải */
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.fade-in-left {
+  opacity: 0;
+  animation: fadeInLeft 1.2s ease-out forwards;
+}
+
+.fade-in-right {
+  opacity: 0;
+  animation: fadeInRight 1.2s ease-out forwards;
+}
+
+@keyframes flipCard {
+  0% {
+    opacity: 0;
+    transform: rotateY(60deg) translateX(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: rotateY(0) translateX(0);
+  }
+}
+
+.price-card {
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+}
+
+/* class animate */
+.flip-card {
+  animation: flipCard 0.6s ease forwards;
+}
  .testimonial-section h2{font-size:clamp(2.75rem,7vw,4.5rem);line-height:1.1;font-weight:700}
  .testimonial-section .grid .jos p{font-size:1.125rem;line-height:1.6}
  .footer-text-slider{animation:horizontal-slide-from-right-to-left 12s linear infinite}
