@@ -615,4 +615,759 @@
     </script>
     <script></script>
   </body>
+    <title>Tailwind Capstone Project</title>
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./css/index.css">
+        <script src="https://cdn.jsdelivr.net/npm/fslightbox/index.js"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+  </head>
+  <body>
+  <div class="page-wrapper relative z-[1] bg-white ">
+    <!-- header -->
+    <header></header>
+
+    <!-- main content -->
+    <main class="main-wrapper relative overflow-hidden">
+
+
+         <!-- funfact section -->
+            <section id="funfact-section">
+                <div class="mx-auto max-w-[1500px] px-5">
+                    <div
+                        class="jos grid grid-cols-1 overflow-hidden rounded-[30px] bg-black lg:rounded-[50px] xl:grid-cols-[minmax(400px,_1fr)_1.5fr] xxl:grid-cols-[1fr_minmax(800px,_1fr)]">
+                          <!-- funfact left -->
+                        <div class="relative overflow-hidden rounded-[30px] lg:rounded-[50px]">
+                            <img src="./img/funfact-image.jpg" alt="funfact-image" width="721" height="784"
+                                class="h-80 w-full object-cover object-center lg:h-[35rem] xl:h-full" />
+                            <!-- video play button-->
+                            <a data-fslightbox="gallery" href="https://www.youtube.com/watch?v=3nQNiWdeH2Q"
+                                class="absolute left-1/2 top-1/2 z-[1] -translate-x-1/2 -translate-y-1/2">
+                                <div
+                                    class="relative flex h-[120px] w-[120px] items-center justify-center rounded-full border-[3px] border-black text-lg font-bold backdrop-blur-[2px] transition-all duration-300 hover:bg-[#fe330a] hover:text-white">
+                                    Play
+                                    <div
+                                        class="absolute -z-[1] h-[110%] w-[110%] animate-[ping_1.5s_ease-in-out_infinite] rounded-full bg-gray-600 opacity-30">
+                                    </div>
+                                </div>
+                            </a>
+                    
+                        </div>
+                      
+
+                        <!-- funfact right -->
+                        <div
+                            class="self-center px-6 py-16 sm:py-20 md:px-16 xl:px-10 xl:py-24 xxl:py-32 xxl:pl-16 xxl:pr-28">
+                           
+                            <div class="mb-8 lg:mb-16 xl:mb-6">
+                                <h2 class="text-white">AI-powered that streamline tasks</h2>
+                            </div>
+                           
+                            <div class="text-left text-lg leading-[1.4] text-white lg:text-[21px] content-copy">
+                                <p class="mb-7 last:mb-0">
+                                    As your business grows or your AI SaaS needs change, you can
+                                    easily adjust your subscription level to match those needs.
+                                    This flexibility ensures that AI remains an asset.
+                                </p>
+                            </div>
+                          
+                            <div class="my-14 h-[1px] w-full section-divider"></div>
+                         
+                            <ul
+                                class="flex flex-col justify-center gap-x-11 gap-y-8 text-center sm:flex-row md:text-left xl:justify-normal xl:text-left xxl:gap-x-20">
+                                <!-- Counter Items -->
+                                <li>
+                                    <h3 class="text-5xl text-[#fe330a] md:text-6xl lg:text-7xl xl:text-7xl xxl:text-[120px]"
+                                        data-module="countup">
+                                        <span class="start-number" data-countup-number="92">92</span>%
+                                    </h3>
+                                    <span class="stat-label block font-normal">
+                                        Customer service inquiries
+                                    </span>
+                                </li>
+                                <!-- Counter Items -->
+                                <li>
+                                    <h3 class="text-5xl text-[#fe330a] md:text-6xl lg:text-7xl xl:text-7xl xxl:text-[120px]"
+                                        data-module="countup">
+                                        <span class="start-number" data-countup-number="75">75</span>%
+                                    </h3>
+                                    <span class="stat-label block font-normal">
+                                        Using financial institutions
+                                    </span>
+                                </li>
+                             
+                            </ul>
+                         
+                        </div>
+                      
+                    </div>
+                </div>
+            </section>
+           
+
+           <!-- pricing section -->
+            <section class="pricing-section">
+                
+                <div class="pb-20 pt-20 xl:pb-[150px] xl:pt-[130px]">
+               
+                    <div class="mx-auto max-w-[1200px] px-5">
+                        <div class="pricing-blob bg-[radial-gradient(50%_50%_at_50%_50%,#fe330a_0%,#ff9831_100%)] blur-[55px]"></div>
+                    
+                        <div class="jos mb-10 text-center lg:mb-12">
+                            <div class="mx-auto md:max-w-xs lg:max-w-xl xl:max-w-[746px]">
+                                <h2>Cost-effectively build any software</h2>
+                            </div>
+                        </div>
+                       
+                        <div class="container mx-auto">
+                          
+                            <div class="jos flex justify-center" data-jos_animation="fade">
+                                <div class="price-toggle">
+                                    <span class="toggle-bg"></span>
+                                    <button class="tab-button price-button active" data-tab="monthly">Monthly</button>
+                                    <button class="tab-button price-button" data-tab="annually">Annually</button>
+                                </div>
+                            </div>
+
+                          
+                            <div class="mt-12 lg:mt-16 xl:mt-20">
+                                <!-- Price List -->
+                                <ul id="monthly"
+                                    class="tab-content grid grid-cols-1 gap-6 md:grid-cols-3">
+                                    <!-- Price Item -->
+                                    <li class="jos group flex flex-col rounded-[10px] bg-[#efeae3] p-10 transition-all duration-300 ease-linear hover:bg-black border border-[#dbd6cf]"
+                                        data-jos_animation="flip" data-jos_delay="0">
+                                        <h3
+                                            class="font-dmSans text-[28px] font-bold leading-[1.28] tracking-tighter text-black transition-all duration-300 ease-linear group-hover:text-white">
+                                            Beginner
+                                        </h3>
+                                        <span
+                                            class="text-lg text-black transition-all duration-300 ease-linear group-hover:text-white">Up
+                                            to 10 members</span>
+
+                                        <div class="my-5 h-[1px] w-full bg-[#DBD6CF]"></div>
+                                        <h4
+                                            class="mb-4 font-dmSans text-5xl font-bold leading-none text-black transition-all duration-300 ease-linear group-hover:text-white md:text-6xl lg:text-7xl xl:text-[80px]">
+                                            $25<span class="text-lg font-semibold">/Per month</span>
+                                        </h4>
+                                        <p
+                                            class="mb-10 text-lg text-black transition-all duration-300 ease-linear group-hover:text-white">
+                                            This is an excellent option for people & small
+                                            businesses who are starting out.
+                                        </p>
+                                        <a class='relative mt-auto block overflow-hidden rounded-[50px] border-2 border-black bg-transparent py-4 text-center text-black transition-all duration-300 ease-linear hover:text-white hover:border-[#fe330a] group-hover:border-[#fe330a] group-hover:text-white after:content-[""] after:absolute after:inset-0 after:bg-[#fe330a] after:origin-top after:scale-y-0 hover:after:scale-y-100 after:transition-transform after:duration-200' href='/pricing'><span class="relative z-[1]">Choose
+                                            the plan</span></a>
+                                    </li>
+                                    
+                                    <!-- Price Item -->
+                                    <li class="jos group flex flex-col rounded-[10px] bg-[#efeae3] p-10 transition-all duration-300 ease-linear hover:bg-black border border-[#dbd6cf]"
+                                        data-jos_animation="flip" data-jos_delay="0">
+                                        <h3
+                                            class="font-dmSans text-[28px] font-bold leading-[1.28] tracking-tighter text-black transition-all duration-300 ease-linear group-hover:text-white">
+                                            Starter
+                                        </h3>
+                                        <span
+                                            class="text-lg text-black transition-all duration-300 ease-linear group-hover:text-white">Up
+                                            to 50 members</span>
+
+                                        <div class="my-5 h-[1px] w-full bg-[#DBD6CF]"></div>
+                                        <h4
+                                            class="mb-4 font-dmSans text-5xl font-bold leading-none text-black transition-all duration-300 ease-linear group-hover:text-white md:text-6xl lg:text-7xl xl:text-[80px]">
+                                            $89<span class="text-lg font-semibold">/Per month</span>
+                                        </h4>
+                                        <p
+                                            class="mb-10 text-lg text-black transition-all duration-300 ease-linear group-hover:text-white">
+                                            This plan is suitable for e-commerce stores as well as
+                                            professional blogs.
+                                        </p>
+                                        <a class='relative mt-auto block overflow-hidden rounded-[50px] border-2 border-black bg-transparent py-4 text-center text-black transition-all duration-300 ease-linear hover:text-white hover:border-[#fe330a] group-hover:border-[#fe330a] group-hover:text-white after:content-[""] after:absolute after:inset-0 after:bg-[#fe330a] after:origin-top after:scale-y-0 hover:after:scale-y-100 after:transition-transform after:duration-200' href='/pricing'><span class="relative z-[1]">Choose
+                                            the plan</span></a>
+                                    </li>
+                                    
+                                    <!-- Price Item -->
+                                    <li class="jos group flex flex-col rounded-[10px] bg-[#efeae3] p-10 transition-all duration-300 ease-linear hover:bg-black border border-[#dbd6cf]"
+                                        data-jos_animation="flip" data-jos_delay="0">
+                                        <h3
+                                            class="font-dmSans text-[28px] font-bold leading-[1.28] tracking-tighter text-black transition-all duration-300 ease-linear group-hover:text-white">
+                                            Pro
+                                        </h3>
+                                        <span
+                                            class="text-lg text-black transition-all duration-300 ease-linear group-hover:text-white">Up
+                                            to 100 members</span>
+
+                                        <div class="my-5 h-[1px] w-full bg-[#DBD6CF]"></div>
+                                        <h4
+                                            class="mb-4 font-dmSans text-5xl font-bold leading-none text-black transition-all duration-300 ease-linear group-hover:text-white md:text-6xl lg:text-7xl xl:text-[80px]">
+                                            $199<span class="text-lg font-semibold">/Per month</span>
+                                        </h4>
+                                        <p
+                                            class="mb-10 text-lg text-black transition-all duration-300 ease-linear group-hover:text-white">
+                                            Ideal for handling complicated projects enterprise-level
+                                            projects, and websites.
+                                        </p>
+                                        <a class='relative mt-auto block overflow-hidden rounded-[50px] border-2 border-black bg-transparent py-4 text-center text-black transition-all duration-300 ease-linear hover:text-white hover:border-[#fe330a] group-hover:border-[#fe330a] group-hover:text-white after:content-[""] after:absolute after:inset-0 after:bg-[#fe330a] after:origin-top after:scale-y-0 hover:after:scale-y-100 after:transition-transform after:duration-200' href='/pricing'><span class="relative z-[1]">Choose
+                                            the plan</span></a>
+                                    </li>
+                                    <!-- Price Item -->
+                                </ul>
+                               
+                                <!-- Price List -->
+                                <ul id="annually"
+                                    class="tab-content grid hidden grid-cols-1 gap-6 md:grid-cols-3">
+                                    <!-- Price Item -->
+                                    <li class="jos group flex flex-col rounded-[10px] bg-[#efeae3] p-10 transition-all duration-300 ease-linear hover:bg-black border border-[#dbd6cf]"
+                                        data-jos_animation="flip" data-jos_delay="0">
+                                        <h3
+                                            class="font-dmSans text-[28px] font-bold leading-[1.28] tracking-tighter text-black transition-all duration-300 ease-linear group-hover:text-white">
+                                            Beginner
+                                        </h3>
+                                        <span
+                                            class="text-lg text-black transition-all duration-300 ease-linear group-hover:text-white">Up
+                                            to 10 members</span>
+
+                                        <div class="my-5 h-[1px] w-full bg-[#DBD6CF]"></div>
+                                        <h4
+                                            class="mb-4 font-dmSans text-5xl font-bold leading-none text-black transition-all duration-300 ease-linear group-hover:text-white md:text-6xl lg:text-7xl xl:text-[80px]">
+                                            $240<span class="text-lg font-semibold">/Per year</span>
+                                        </h4>
+                                        <p
+                                            class="mb-10 text-lg text-black transition-all duration-300 ease-linear group-hover:text-white">
+                                            This is an excellent option for people & small
+                                            businesses who are starting out.
+                                        </p>
+                                        <a class='relative mt-auto block overflow-hidden rounded-[50px] border-2 border-black bg-transparent py-4 text-center text-black transition-all duration-300 ease-linear hover:text-white hover:border-[#fe330a] group-hover:border-[#fe330a] group-hover:text-white after:content-[""] after:absolute after:inset-0 after:bg-[#fe330a] after:origin-top after:scale-y-0 hover:after:scale-y-100 after:transition-transform after:duration-200' href='/pricing'><span class="relative z-[1]">Choose
+                                            the plan</span></a>
+                                    </li>
+                                    
+                                    <!-- Price Item -->
+                                    <li class="jos group flex flex-col rounded-[10px] bg-[#efeae3] p-10 transition-all duration-300 ease-linear hover:bg-black border border-[#dbd6cf]"
+                                        data-jos_animation="flip" data-jos_delay="0">
+                                        <h3
+                                            class="font-dmSans text-[28px] font-bold leading-[1.28] tracking-tighter text-black transition-all duration-300 ease-linear group-hover:text-white">
+                                            Starter
+                                        </h3>
+                                        <span
+                                            class="text-lg text-black transition-all duration-300 ease-linear group-hover:text-white">Up
+                                            to 50 members</span>
+
+                                        <div class="my-5 h-[1px] w-full bg-[#DBD6CF]"></div>
+                                        <h4
+                                            class="mb-4 font-dmSans text-5xl font-bold leading-none text-black transition-all duration-300 ease-linear group-hover:text-white md:text-6xl lg:text-7xl xl:text-[80px]">
+                                            $960<span class="text-lg font-semibold">/Per year</span>
+                                        </h4>
+                                        <p
+                                            class="mb-10 text-lg text-black transition-all duration-300 ease-linear group-hover:text-white">
+                                            This plan is suitable for e-commerce stores as well as
+                                            professional blogs.
+                                        </p>
+                                        <a class='relative mt-auto block overflow-hidden rounded-[50px] border-2 border-black bg-transparent py-4 text-center text-black transition-all duration-300 ease-linear hover:text-white hover:border-[#fe330a] group-hover:border-[#fe330a] group-hover:text-white after:content-[""] after:absolute after:inset-0 after:bg-[#fe330a] after:origin-top after:scale-y-0 hover:after:scale-y-100 after:transition-transform after:duration-200' href='/pricing'><span class="relative z-[1]">Choose
+                                            the plan</span></a>
+                                    </li>
+                                    
+                                    <!-- Price Item -->
+                                    <li class="jos group flex flex-col rounded-[10px] bg-[#efeae3] p-10 transition-all duration-300 ease-linear hover:bg-black border border-[#dbd6cf]"
+                                        data-jos_animation="flip" data-jos_delay="0">
+                                        <h3
+                                            class="font-dmSans text-[28px] font-bold leading-[1.28] tracking-tighter text-black transition-all duration-300 ease-linear group-hover:text-white">
+                                            Pro
+                                        </h3>
+                                        <span
+                                            class="text-lg text-black transition-all duration-300 ease-linear group-hover:text-white">Up
+                                            to 100 members</span>
+
+                                        <div class="my-5 h-[1px] w-full bg-[#DBD6CF]"></div>
+                                        <h4
+                                            class="mb-4 font-dmSans text-5xl font-bold leading-none text-black transition-all duration-300 ease-linear group-hover:text-white md:text-6xl lg:text-7xl xl:text-[80px]">
+                                            $1800<span class="text-lg font-semibold leading-none">/Per year</span>
+                                        </h4>
+                                        <p
+                                            class="mb-10 text-lg text-black transition-all duration-300 ease-linear group-hover:text-white">
+                                            Ideal for handling complicated projects enterprise-level
+                                            projects, and websites.
+                                        </p>
+                                        <a class='relative mt-auto block overflow-hidden rounded-[50px] border-2 border-black bg-transparent py-4 text-center text-black transition-all duration-300 ease-linear hover:text-white hover:border-[#fe330a] group-hover:border-[#fe330a] group-hover:text-white after:content-[""] after:absolute after:inset-0 after:bg-[#fe330a] after:origin-top after:scale-y-0 hover:after:scale-y-100 after:transition-transform after:duration-200' href='/pricing'><span class="relative z-[1]">Choose
+                                            the plan</span></a>
+                                    </li>
+                              
+                                </ul>
+                               
+                            </div>
+                           
+                        </div>
+                    </div>
+                    
+                </div>
+            
+            </section>
+          
+
+           <!--  FAQ section -->
+            <section class="faq-section">
+         
+                <div class="pb-20 xl:pb-[150px]">
+          
+                    <div class="mx-auto max-w-[1200px] px-5">
+                        <div class="grid grid-cols-1 gap-y-10 md:grid-cols-2">
+                         
+                            <div class="jos flex flex-col" data-jos_animation="fade-right" data-jos_once="1" data-jos-counter="1">
+                              
+                                <div class="mb-6">
+                                    <div class="mx-auto md:mx-0 md:max-w-none">
+                                        <h2>Freely ask us for more information</h2>
+                                    </div>
+                                </div>
+                                
+                                <div class="text-lg leading-[1.4] lg:text-[21px]">
+                                    <p class="mb-7 last:mb-0">
+                                        Our AI SaaS solutions can be quickly deployed, enabling
+                                        users to start benefiting from AI capabilities without
+                                        lengthy setup and development times in fast-paced
+                                        industries.
+                                    </p>
+                                    <a class='relative mt-5 inline-flex overflow-hidden rounded-[50px] border-2 border-black bg-black px-7 py-4 text-left text-white transition-colors duration-200 hover:border-[#fe330a] hover:text-white after:content-[""] after:absolute after:inset-0 after:bg-[#fe330a] after:origin-top after:scale-y-0 hover:after:scale-y-100 after:transition-transform after:duration-200' href='/faq'><span class="relative z-[1]">Ask
+                                        you questions</span></a>
+                                </div>
+                            </div>
+                           
+                            <div class="jos md:ml-10 lg:ml-20 xl:ml-32" data-jos_animation="fade-left">
+                             
+                                <ul class="accordion">
+                                
+                                    <li
+                                        class="accordion-item jos border-b-[1px] border-[#DBD6CF] pb-6 pt-6 first:pt-0 last:border-b-0 last:pb-0 active"
+                                        data-jos_animation="fade-left" data-jos_delay="0.0">
+                                        <div
+                                            class="accordion-header flex items-center justify-between font-dmSans text-xl font-bold leading-[1.2] -tracking-[0.5px] text-black lg:text-[28px]">
+                                            <p>How do I start AI SaaS?</p>
+                                            <div class="accordion-icon">
+                                                <span class="faq-plus"></span>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-content text-[#2C2C2C]">
+                                            <p>
+                                                Go to the our official website and require users to
+                                                create an account. You'll need to provide some basic
+                                                information and agree to our terms and conditions.
+                                            </p>
+                                        </div>
+                                    </li>
+                                  
+                                    <li
+                                        class="accordion-item jos border-b-[1px] border-[#DBD6CF] pb-6 pt-6 first:pt-0 last:border-b-0 last:pb-0"
+                                        data-jos_animation="fade-left" data-jos_delay="0.1">
+                                        <div
+                                            class="accordion-header flex items-center justify-between font-dmSans text-xl font-bold leading-[1.2] -tracking-[0.5px] text-black lg:text-[28px]">
+                                            <p>Can I customize AI SaaS solutions?</p>
+                                            <div class="accordion-icon">
+                                                <span class="faq-plus"></span>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-content text-[#2C2C2C]">
+                                            <p>
+                                                Go to the our official website and require users to
+                                                create an account. You'll need to provide some basic
+                                                information and agree to our terms and conditions.
+                                            </p>
+                                        </div>
+                                    </li>
+                                    
+                                    <li
+                                        class="accordion-item jos border-b-[1px] border-[#DBD6CF] pb-6 pt-6 first:pt-0 last:border-b-0 last:pb-0"
+                                        data-jos_animation="fade-left" data-jos_delay="0.2">
+                                        <div
+                                            class="accordion-header flex items-center justify-between font-dmSans text-xl font-bold leading-[1.2] -tracking-[0.5px] text-black lg:text-[28px]">
+                                            <p>How can AI benefit my business?</p>
+                                            <div class="accordion-icon">
+                                                <span class="faq-plus"></span>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-content text-[#2C2C2C]">
+                                            <p>
+                                                Go to the our official website and require users to
+                                                create an account. You'll need to provide some basic
+                                                information and agree to our terms and conditions.
+                                            </p>
+                                        </div>
+                                    </li>
+                                </ul>
+                                
+                            </div>
+                        
+                        </div>
+                    </div>
+                   
+                </div>
+                
+            </section>
+           
+
+            <!-- testimonial section -->
+            <section class="testimonial-section">
+         
+                <div class="bg-black pb-40 pt-20 xl:pb-[200px] xl:pt-[130px]">
+                    
+                    <div class="mx-auto max-w-[1200px] px-5">
+                       
+                        <div class="jos mb-10 text-center lg:mb-16 xl:mb-20">
+                            <div class="mx-auto max-w-[300px] lg:max-w-[600px] xl:max-w-[680px]">
+                                <h2 class="text-white">Positive feedback from our users</h2>
+                            </div>
+                        </div>
+                       
+
+                        <!-- Testimonial List -->
+                        <div class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+                            <!-- Testimonial Item -->
+                            <div class="jos flex flex-col gap-y-8 rounded-[10px] border-[1px] border-[#191919] p-[30px] text-white"
+                                data-jos_animation="fade-left" data-jos_delay="0.1">
+                                <div class="block">
+                                    <img src="./img/rating.svg" alt="rating" width="146" height="25" />
+                                </div>
+                                <p>
+                                    “This AI SaaS tool has revolutionized the way we process and
+                                    analyze data. This is a game-changer for our business.”
+                                </p>
+                                <div class="flex items-center gap-x-4">
+                                    <div class="h-[60px] w-[60px] overflow-hidden rounded-full">
+                                        <img src="./img/testimonial-img-1.jpg" alt="testimonial-img"
+                                            width="60" height="60" class="h-full w-full object-cover object-center" />
+                                    </div>
+                                    <div class="flex flex-col gap-y-1">
+                                        <span class="block text-lg font-semibold leading-[1.6]">
+                                            Max Weber
+                                        </span>
+                                        <span class="block text-sm font-light leading-[1.4]">
+                                            HR Manager
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                          
+                            <!-- Testimonial Item -->
+                            <div class="jos flex flex-col gap-y-8 rounded-[10px] border-[1px] border-[#191919] p-[30px] text-white"
+                                data-jos_animation="fade-left" data-jos_delay="0.2">
+                                <div class="block">
+                                    <img src="./img/rating.svg" alt="rating" width="146" height="25" />
+                                </div>
+                                <p>
+                                    "It answers immediately, and we've seen a significant
+                                    reduction in response time. Our customers love it and so do
+                                    we!"
+                                </p>
+                                <div class="flex items-center gap-x-4">
+                                    <div class="h-[60px] w-[60px] overflow-hidden rounded-full">
+                                        <img src="./img/testimonial-img-2.jpg" alt="testimonial-img"
+                                            width="60" height="60" class="h-full w-full object-cover object-center" />
+                                    </div>
+                                    <div class="flex flex-col gap-y-1">
+                                        <span class="block text-lg font-semibold leading-[1.6]">
+                                            Douglas Smith
+                                        </span>
+                                        <span class="block text-sm font-light leading-[1.4]">
+                                            Businessman
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Testimonial Item -->
+                            
+                            <div class="jos flex flex-col gap-y-8 rounded-[10px] border-[1px] border-[#191919] p-[30px] text-white"
+                                data-jos_animation="fade-left" data-jos_delay="0.3">
+                                <div class="block">
+                                    <img src="./img/rating.svg" alt="rating" width="146" height="25" />
+                                </div>
+                                <p>
+                                    "It is accurate, fast and supports multiple languages
+                                    support. It is a must for any international business
+                                    success."
+                                </p>
+                                <div class="flex items-center gap-x-4">
+                                    <div class="h-[60px] w-[60px] overflow-hidden rounded-full">
+                                        <img src="./img/testimonial-img-3.jpg" alt="testimonial-img"
+                                            width="60" height="60" class="h-full w-full object-cover object-center" />
+                                    </div>
+                                    <div class="flex flex-col gap-y-1">
+                                        <span class="block text-lg font-semibold leading-[1.6]">
+                                            Abraham Maslo
+                                        </span>
+                                        <span class="block text-sm font-light leading-[1.4]">
+                                            Founder @ Marketing Company
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Testimonial Item -->
+                            <div class="jos flex flex-col gap-y-8 rounded-[10px] border-[1px] border-[#191919] p-[30px] text-white"
+                                data-jos_animation="fade-right" data-jos_delay="0.1">
+                                <div class="block">
+                                    <img src="./img/rating.svg" alt="rating" width="146" height="25" />
+                                </div>
+                                <p>
+                                    "Security is a top concern for us, and AI SaaS takes it
+                                    seriously. It's a reassuring layer of protection for our
+                                    organization."
+                                </p>
+                                <div class="flex items-center gap-x-4">
+                                    <div class="h-[60px] w-[60px] overflow-hidden rounded-full">
+                                        <img src="./img/testimonial-img-4.jpg" alt="testimonial-img"
+                                            width="60" height="60" class="h-full w-full object-cover object-center" />
+                                    </div>
+                                    <div class="flex flex-col gap-y-1">
+                                        <span class="block text-lg font-semibold leading-[1.6]">
+                                            Jack Fayol
+                                        </span>
+                                        <span class="block text-sm font-light leading-[1.4]">
+                                            HR Manager
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                          
+                            <!-- Testimonial Item -->
+                            <div class="jos flex flex-col gap-y-8 rounded-[10px] border-[1px] border-[#191919] p-[30px] text-white"
+                                data-jos_animation="fade-right" data-jos_delay="0.2">
+                                <div class="block">
+                                    <img src="./img/rating.svg" alt="rating" width="146" height="25" />
+                                </div>
+                                <p>
+                                    "We were concerned about integrating their APIs were well
+                                    documented, and their support team was super cool."
+                                </p>
+                                <div class="flex items-center gap-x-4">
+                                    <div class="h-[60px] w-[60px] overflow-hidden rounded-full">
+                                        <img src="./img/testimonial-img-5.jpg" alt="testimonial-img"
+                                            width="60" height="60" class="h-full w-full object-cover object-center" />
+                                    </div>
+                                    <div class="flex flex-col gap-y-1">
+                                        <span class="block text-lg font-semibold leading-[1.6]">
+                                            Karen Lynn
+                                        </span>
+                                        <span class="block text-sm font-light leading-[1.4]">
+                                            Software Engineer
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                           
+                            <!-- Testimonial Item -->
+                            <div class="jos flex flex-col gap-y-8 rounded-[10px] border-[1px] border-[#191919] p-[30px] text-white"
+                                data-jos_animation="fade-right" data-jos_delay="0.3">
+                                <div class="block">
+                                    <img src="./img/rating.svg" alt="rating" width="146" height="25" />
+                                </div>
+                                <p>
+                                    "The return on investment has exceeded our expectations.
+                                    it's an investment in the future of our business."
+                                </p>
+                                <div class="flex items-center gap-x-4">
+                                    <div class="h-[60px] w-[60px] overflow-hidden rounded-full">
+                                        <img src="./img/testimonial-img-6.jpg" alt="testimonial-img"
+                                            width="60" height="60" class="h-full w-full object-cover object-center" />
+                                    </div>
+                                    <div class="flex flex-col gap-y-1">
+                                        <span class="block text-lg font-semibold leading-[1.6]">
+                                            Henry Ochi
+                                        </span>
+                                        <span class="block text-sm font-light leading-[1.4]">
+                                            Bank Manager
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                           
+                        </div>
+                        
+                    </div>
+                  
+                </div>
+             
+            </section>
+            
+
+           
+        </main>
+
+        <!-- footer -->
+        <footer
+            class="relative z-[1] -mt-[70px] overflow-hidden rounded-tl-[30px] rounded-tr-[30px] bg-[#efeae3] lg:rounded-tl-[50px] lg:rounded-tr-[50px]">
+            <!-- Footer Top -->
+            <div class="py-[60px] xl:pb-[100px] xl:pt-[130px]">
+                <div class="overflow-hidden">
+                    <!-- Footer Text Slider -->
+                    <div class="footer-text-slider flex w-full items-center gap-x-[30px] whitespace-nowrap">
+                        <!-- Footer Slide Item  -->
+                        <img src="./img/footer-text-slider-icon.svg" alt="footer-text-slider-icon" width="60"
+                            height="60" class="h-10 w-10 lg:h-[60px] lg:w-[60px]" />
+                        <div
+                            class="block font-dmSans text-4xl font-bold leading-none -tracking-[2px] text-black lg:text-6xl xl:text-7xl xxl:text-[80px]">
+                            Start building software
+                        </div>
+                       
+                        <!-- Footer Slide Item  -->
+                        <img src="./img/footer-text-slider-icon.svg" alt="footer-text-slider-icon" width="60"
+                            height="60" class="h-10 w-10 lg:h-[60px] lg:w-[60px]" />
+                        <div
+                            class="block font-dmSans text-4xl font-bold leading-none -tracking-[2px] text-black lg:text-6xl xl:text-7xl xxl:text-[80px]">
+                            Start building software
+                        </div>
+                        
+                        <!-- Footer Slide Item  -->
+                        <img src="./img/footer-text-slider-icon.svg" alt="footer-text-slider-icon" width="60"
+                            height="60" class="h-10 w-10 lg:h-[60px] lg:w-[60px]" />
+                        <div
+                            class="block font-dmSans text-4xl font-bold leading-none -tracking-[2px] text-black lg:text-6xl xl:text-7xl xxl:text-[80px]">
+                            Start building software
+                        </div>
+                        <!-- Footer Slide Item  -->
+                    </div>
+                </div>
+            </div>
+          
+            <div class="mx-auto max-w-[1200px] px-5">
+                <div class="h-[1px] w-full bg-[#DBD6CF]"></div>
+                <!-- Footer Center -->
+                <div
+                    class="lg grid grid-cols-1 gap-10 py-[60px] md:grid-cols-[1fr_auto_auto] xl:grid-cols-[1fr_auto_auto_1fr] xl:gap-20 xl:py-[100px]">
+                    <!-- Footer Widget -->
+                    <div class="flex flex-col gap-y-6">
+                        <a class='inline-block' href='/'><img src="./img/logo.png" alt="logo"
+                                width="96" height="24" /></a>
+                        <p>
+                            Our mission is to harness the power of AI to solve complex
+                            business challenges & decision-makers with data-driven insights,
+                            and enhance user experiences across digital platforms.
+                        </p>
+                        <p>
+                            Website: <a href="https://www.example.com">www.example.com</a>
+                        </p>
+                    </div>
+                 
+
+                    <!-- Footer Widget -->
+                    <div class="flex flex-col gap-y-6">
+                        <!-- Footer Title -->
+                        <h4 class="text-[21px] font-semibold capitalize text-black">
+                            Primary Pages
+                        </h4>
+              
+
+                        <!-- Footer Navbar -->
+                        <ul class="flex flex-col gap-y-[10px] capitalize">
+                            <li>
+                                <a class='transition-all duration-300 ease-linear hover:text-[#fe330a]' href='/'>Home</a>
+                            </li>
+                            <li>
+                                <a class='transition-all duration-300 ease-linear hover:text-[#fe330a]' href='/about'>About
+                                    Us</a>
+                            </li>
+                            <li>
+                                <a class='transition-all duration-300 ease-linear hover:text-[#fe330a]' href='/services'>Services</a>
+                            </li>
+                            <li>
+                                <a class='transition-all duration-300 ease-linear hover:text-[#fe330a]' href='/pricing'>pricing</a>
+                            </li>
+                            <li>
+                                <a class='transition-all duration-300 ease-linear hover:text-[#fe330a]' href='/contact'>Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                  
+
+                    <!-- Footer Widget -->
+                    <div class="flex flex-col gap-y-6">
+                        <!-- Footer Title -->
+                        <h4 class="text-[21px] font-semibold capitalize text-black">
+                            Utility pages
+                        </h4>
+                        
+
+                        <!-- Footer Navbar -->
+                        <ul class="flex flex-col gap-y-[10px] capitalize">
+                            <li>
+                                <a class='transition-all duration-300 ease-linear hover:text-[#fe330a]' href='/signup'>Signup</a>
+                            </li>
+                            <li>
+                                <a class='transition-all duration-300 ease-linear hover:text-[#fe330a]' href='/login'>Login</a>
+                            </li>
+                            <li>
+                                <a class='transition-all duration-300 ease-linear hover:text-[#fe330a]' href='/error-404'>404 Not
+                                    found</a>
+                            </li>
+                            <li>
+                                <a class='transition-all duration-300 ease-linear hover:text-[#fe330a]' href='/reset-password'>Password
+                                    Reset</a>
+                            </li>
+                        </ul>
+                    </div>
+                  
+
+                    <!-- Footer Widget -->
+                    <div class="flex flex-col gap-y-6">
+                        <!-- Footer Title -->
+                        <h4 class="text-[21px] font-semibold capitalize text-black">
+                            Subscribe to our newsletter
+                        </h4>
+                        <!-- Footer Title -->
+                        <!-- Footer Subscriber Form -->
+                        <form action="#" method="post" class="">
+                            <div class="relative h-[50px] max-w-[300px]">
+                                <input type="email" name="newsletter-email" id="newsletter-email"
+                                    placeholder="Enter your email"
+                                    class="p-y-[18px] h-full w-full rounded-[50px] border-[1px] border-black px-[24px] pr-20 outline-none"
+                                    required />
+                                <button type="submit"
+                                    class="absolute right-[5px] top-[50%] inline-block h-10 -translate-y-[50%] rounded-[50px] bg-black px-6 transition-all hover:bg-orange-500">
+                                    <img src="./img/arrow-right-large.svg" alt="newsletter" />
+                                </button>
+                            </div>
+                        </form>
+                    
+                    </div>
+                    
+                </div>
+                <!-- Footer Center -->
+                <div class="h-[1px] w-full bg-[#DBD6CF]"></div>
+                <!-- Footer Bottom -->
+                <div class="py-9 text-center">
+                    <p>&copy; Copyright 2023, All Rights Reserved by Mthemeus</p>
+                </div>
+              
+            </div>
+
+            <!-- Footer Background Shape 1  -->
+            <div
+                class="absolute -top-[290px] right-[90px] -z-[1] h-[406px] w-[406px] -rotate-[58deg] rounded-[451px] bg-[radial-gradient(50%_50%_at_50%_50%,#fe330a_0%,#ff9831_100%)] blur-[55px]">
+            </div>
+
+            <!-- Footer Background Shape 2  -->
+            <div
+                class="absolute -right-[200px] -top-[205px] -z-[1] h-[451px] w-[451px] -rotate-[58deg] rounded-[451px] bg-[radial-gradient(50%_50%_at_50%_50%,#ff9831_0%,#fe330a_100%)] blur-[55px]">
+            </div>
+        </footer>
+     
+    </div>
+
+    <!--Vendor js-->
+    <script src="assets/js/vendors/counterup.js" type="module"></script>
+    <script src="assets/js/vendors/swiper-bundle.min.js"></script>
+    <script src="assets/js/vendors/fslightbox.js"></script>
+    <script src="assets/js/vendors/jos.min.js"></script>
+    <script src="assets/js/vendors/menu.js"></script>
+
+    <!-- Main js -->
+    <script>
+      (()=>{const items=document.querySelectorAll('.faq-section .accordion-item');if(!items.length)return;items.forEach(it=>{const header=it.querySelector('.accordion-header');const content=it.querySelector('.accordion-content');if(it.classList.contains('active')){it.classList.add('open')}header.addEventListener('click',()=>{const isOpen=it.classList.contains('open');items.forEach(i=>i.classList.remove('open'));if(!isOpen){it.classList.add('open')}else{it.classList.remove('open')}})});})();
+    </script>
+    <script>
+      (()=>{const els=[...document.querySelectorAll('.jos')];if(!els.length)return;if(!('IntersectionObserver'in window)){els.forEach(e=>e.classList.add('jos-in'));return}const seen=new WeakSet;const io=new IntersectionObserver(entries=>{entries.forEach(entry=>{if(entry.isIntersecting){const el=entry.target;if(seen.has(el))return;seen.add(el);const delay=parseFloat(el.getAttribute('data-jos_delay')||'0')*1000;setTimeout(()=>el.classList.add('jos-in'),delay)}})},{threshold:.15});els.forEach(el=>io.observe(el))})();
+    </script>
+    <script>
+      (()=>{const wrap=document.querySelector('.pricing-section .price-toggle');const monthly=document.getElementById('monthly');const annually=document.getElementById('annually');if(!wrap||!monthly||!annually)return;const btns=wrap.querySelectorAll('.tab-button');const set=(tab)=>{btns.forEach(b=>b.classList.toggle('active',b.dataset.tab===tab));if(tab==='monthly'){monthly.classList.remove('hidden');annually.classList.add('hidden');wrap.classList.remove('yearly')}else{monthly.classList.add('hidden');annually.classList.remove('hidden');wrap.classList.add('yearly')}};btns.forEach(b=>b.addEventListener('click',()=>set(b.dataset.tab)));set('monthly')})();
+    </script>
+    <script>
+      (()=>{const nums=[...document.querySelectorAll('#funfact-section [data-module="countup"] .start-number')];if(!nums.length)return;const animating=new WeakMap();nums.forEach(n=>{n.textContent='0'});const animate=el=>{if(animating.get(el))return;animating.set(el,true);const end=parseFloat(el.dataset.countupNumber||el.textContent)||0;const dur=1500;const start=0;const t0=performance.now();const step=t=>{const p=Math.min(1,(t-t0)/dur);const eased=1-Math.pow(1-p,3);el.textContent=Math.round(start+(end-start)*eased);if(p<1){requestAnimationFrame(step)}else{animating.set(el,false)}};requestAnimationFrame(step)};const io=new IntersectionObserver(entries=>{entries.forEach(e=>{const el=e.target;if(e.isIntersecting){animate(el)}else{el.textContent='0';animating.set(el,false)}})},{threshold:.5});nums.forEach(el=>io.observe(el));})();
+    </script>
+</body>
+
 </html>
